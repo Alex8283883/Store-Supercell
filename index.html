@@ -1,43 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Supercell Store - Demo</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Free Gamepass Plus</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .box {
+            background-color: #1e1e1e;
+            border: 2px solid #fbbf24;
+            border-radius: 16px;
+            padding: 40px 60px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #fbbf24;
+            color: #000;
+            font-size: 20px;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #f59e0b;
+        }
+
+        .img-container {
+            margin-top: 30px;
+        }
+
+        .img-container img {
+            width: 140px;
+            filter: drop-shadow(0 0 15px #fbbf24);
+            transition: transform 0.4s ease;
+        }
+
+        .img-container img:hover {
+            transform: rotateY(8deg) scale(1.05);
+        }
+    </style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">Supercell Store</div>
-    <nav class="menu">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Support</a>
-    </nav>
-  </header>
-
-  <main class="product-grid">
-    <div class="product-card">
-      <img src="https://via.placeholder.com/200" alt="Product 1">
-      <h2>Product 1</h2>
-      <p>$19.99</p>
+    <div class="box">
+        <h1>Get Your Free Gamepass Plus!</h1>
+        <p>Claim now and the Gamepass Plus will be sent directly to your account after verification.</p>
+        <button onclick="window.location.href='login.php'">Claim Gamepass Plus</button>
+        <div class="img-container">
+            <img src="gamepass.png" alt="Gamepass Plus">
+        </div>
     </div>
-
-    <div class="product-card">
-      <img src="https://via.placeholder.com/200" alt="Product 2">
-      <h2>Product 2</h2>
-      <p>$29.99</p>
-    </div>
-
-    <div class="product-card">
-      <img src="https://via.placeholder.com/200" alt="Product 3">
-      <h2>Product 3</h2>
-      <p>$39.99</p>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2025 Supercell Store - Demo</p>
-  </footer>
 </body>
 </html>
